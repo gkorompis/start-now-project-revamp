@@ -1,0 +1,80 @@
+.custom-navbar{
+    width: 100vw;
+    height: 10vh;
+
+    /* background-color: aliceblue; */
+
+    display: grid;
+    grid-template-columns: 15% 75% 10%;
+}
+
+.navbar-div{
+    display: flex;
+    align-items: center;
+}
+.navbar-div-logo{
+    justify-content: end;
+}
+.navbar-div-links {
+    justify-content: end;
+}
+.navbar-div-links > * {
+    margin-right: 20px;
+}
+.navbar-div-button {
+    justify-content: start;
+}
+
+.navbar-anchors{
+    color: var(--pal1-d)
+}
+
+.anchor-logo{
+    font-family: "font-palo-alto";
+    font-size: 30px;
+}
+
+.anchor-link{
+    padding-inline: 13px;
+    padding-block: 10px;
+    border-radius: 3px;
+
+    font-family: "font-quicksand";
+    font-size: 15.9px;
+    font-weight:500;
+    letter-spacing: 1px;
+
+    transition: 0.1s;
+    cursor: pointer;
+}
+.anchor-link:hover{
+    /* background-color: var(--pal1-c); */
+    /* color: var(--pal1-a); */
+    font-weight: 700;
+}
+
+.anchor-button{
+    padding-inline: 13px;
+    padding-block: 10px;
+    border-radius: 3px;
+
+    font-family: "font-quicksand";
+    font-size: 15.9px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    background-color: var(--pal1-c);
+    color: var(--pal1-a);
+
+    transition: 0.3s;
+    cursor: pointer;
+}
+.anchor-button:hover{
+    background-color: var(--pal1-b);
+}
+.anchor-button:active{
+    background-color: var(--pal1-a);
+}
+
+
+
