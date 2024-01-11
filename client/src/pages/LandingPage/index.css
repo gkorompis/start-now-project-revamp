@@ -12,7 +12,7 @@
 
 .landing-page-banner{
     width: 100vw;
-    height:80vh;
+    height:81vh;
     
     display: flex;
     /* flex-direction: column; */
@@ -22,8 +22,8 @@
     /* background-color: aliceblue; */
 }
 .img-landing-page-banner{
-    height: 300px;
-    margin-right: 30px;
+    height: 350px;
+    margin-right: 40px;
     
 }
 .landing-page-banner-tagline{
@@ -31,6 +31,12 @@
 }
 .tagline-landing-page-banner{
     color: var(--pal1-d);
+    font-size: 70px;
+    font-family: "font-quicksand";
+    font-weight: 600;
+}
+.tagline-span{
+    color: var(--pal1-c);
     font-size: 70px;
     font-family: "font-quicksand";
     font-weight: 600;
@@ -46,8 +52,8 @@
 .section-intensive-class{
     width: 100vw;
     height: 120vh;
-    border-top-right-radius: 10%;
-    border-top-left-radius: 10%;
+    border-top-right-radius: 5%;
+    border-top-left-radius: 5%;
     
     display: flex;
     align-items: center;
