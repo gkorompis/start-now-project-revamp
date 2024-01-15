@@ -1,3 +1,9 @@
+:root {
+  --pal1-a: #33313B;
+  --pal1-b: #4592AF;
+  --pal1-c: #E3C4A8;
+  --pal1-d: #F6F5F5;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,6 +11,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--pal1-a);
+
 }
 
 code {
@@ -17,14 +25,9 @@ p, h1, h2, h3 {
   margin: 0px;
 }
 
-:root{
-  --pal1-a: #33313B;
-  --pal1-b: #4592AF;
-  --pal1-c: #E3C4A8;
-  --pal1-d: #F6F5F5;
-}
+
 @font-face {
-  font-family: "logo-font-birney";
+  font-family: "font-birney";
   src: url("./assets//fonts/birney-font/Birney-dgox.ttf") format("truetype");
 }
 @font-face {
@@ -34,4 +37,8 @@ p, h1, h2, h3 {
 @font-face {
   font-family: "font-quicksand";
   src: url("./assets/fonts/quicksand/Quicksand-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "font-montserrat";
+  src: url("./assets/fonts/montserrat/Montserrat-Regular.otf") format("opentype");
 }

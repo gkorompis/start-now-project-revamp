@@ -1,0 +1,84 @@
+/* section intensive class */
+.section-intensive-class {
+    width: 98.93vw;
+    height: vh;
+    /* border-top-right-radius: 5%; */
+    /* border-top-left-radius: 5%; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--pal1-d);
+
+}
+.section-title{
+    margin-block: 70px;
+    font-size: 39px;
+    color: var(--pal1-a);
+    font-family: "font-montserrat";
+    font-weight: 900;
+    letter-spacing: 1.6px;
+}
+.class-card-deck{
+    width: 90%;
+    display: grid;
+    row-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    /* background-color: var(--pal1-a); */
+}
+.class-card{
+    /* background-color: var(--pal1-a); */
+    border: 2px solid var(--pal1-a);
+    height: 60vh;
+    width: 600px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1370px){
+    /* .section-intensive-class{
+        height: 150vh;
+    } */
+    .class-card{
+        width: 500px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    /* .section-intensive-class {
+        height: 150vh;
+    } */
+
+    .class-card {
+        width: 400px;
+        height: 50vh;
+    }
+}
+@media screen and (max-width: 900px) {
+    .section-intensive-class {
+        height: 150vh;
+    }
+}
+
+.module-summary{
+    display: flex;
+    flex-direction: column;
+}
+.class-card-title{
+    font-size: 32px;
+    font-family: "font-montserrat";
+    margin: 30px;
+}
+
+.class-card-info-item{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-inline: 30px;
+    margin-block: 10px;
+}
+.class-card-info-item-img{
+    height: 30px;
+    width: 30px;
+    margin-right: 16px;
+}

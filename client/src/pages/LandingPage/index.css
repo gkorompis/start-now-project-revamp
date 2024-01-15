@@ -1,7 +1,9 @@
 .landing-page{
-    width: 100vw;
-    height: 100vh;
+    width: 98.5vw;
     background-color: var(--pal1-a);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .page-banner{
@@ -11,54 +13,55 @@
 }
 
 .landing-page-banner{
-    width: 100vw;
-    height:81vh;
+    width: 90%;
+    height:80vh;
     
     display: flex;
     /* flex-direction: column; */
     align-items: center;
     justify-content: center;
+    padding-left: 25px;
 
     /* background-color: aliceblue; */
 }
 .img-landing-page-banner{
-    height: 350px;
-    margin-right: 40px;
+    height: 200px;
+    margin-right: 32px;
+    filter: invert(50%);
     
 }
 .landing-page-banner-tagline{
-    width: 50vw;
+    width: 60vw;
+    /* align-self: start; */
+    margin-top: 50px;
 }
 .tagline-landing-page-banner{
     color: var(--pal1-d);
     font-size: 70px;
-    font-family: "font-quicksand";
+    /* font-family: "font-quicksand"; */
+    font-family: "font-montserrat";
+    letter-spacing: 1.6px;
     font-weight: 600;
+    line-height: 1.3;
+    margin-left: 30px;
+    
 }
 .tagline-span{
     color: var(--pal1-c);
     font-size: 70px;
     font-family: "font-quicksand";
+    font-family: "font-birney";
+    font-family: "font-montserrat";
+    letter-spacing: 1.6px;
+    /* font-family: "font-palo-alto"; */
     font-weight: 600;
+    letter-spacing: 4px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
     .img-landing-page-banner {
-        animation: App-logo-spin infinite 25s linear;
+        animation: App-logo-spin infinite 45s linear;
     }
 }
 
-/* section intensive class */
-.section-intensive-class{
-    width: 100vw;
-    height: 120vh;
-    border-top-right-radius: 5%;
-    border-top-left-radius: 5%;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-    background-color: var(--pal1-b);
-    
-}

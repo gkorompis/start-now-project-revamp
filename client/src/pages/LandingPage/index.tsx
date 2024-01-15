@@ -1,5 +1,6 @@
 import { ImgNeural, ImgRound } from "../../assets/images"
 import { CustomNavbar } from "../../components"
+import { SectionFlyers, SectionIntensive, SectionResources, SectionServices } from "../../containers"
 import "./index.css"
 
 const LandingPage = () =>{
@@ -16,12 +17,15 @@ const LandingPage = () =>{
                         <img className="img-landing-page-banner" src={ImgNeural}/>
                     </div>
                     <div className="landing-page-banner-tagline">
-                        <p className="tagline-landing-page-banner">improve your case, <span className="tagline-span">start now.</span></p>
+                        <p className="tagline-landing-page-banner">Improve your project, <span className="tagline-span">start now.</span></p>
                     </div>
                 </div>
-                <div className="section-intensive-class">
-                    <p className="tagline-landing-page-banner">intensive class</p>
-                </div>
+                
+                <SectionServices/>
+                <SectionIntensive/>
+                <SectionResources/>
+                <SectionFlyers/>
+                
             </div>
         </>
     )

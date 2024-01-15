@@ -1,0 +1,73 @@
+.section-flyers{
+    width: 98.93vw;
+    background-color: var(--pal1-d);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .section-flyers-title{
+    font-size: 28px;
+    font-family: "font-montserrat";
+    color: var(--pal1-a);
+    margin-block: 39px;
+} */
+.section-flyers-title {
+    margin-block: 70px;
+    font-size: 39px;
+    color: var(--pal1-a);
+    font-family: "font-montserrat";
+    font-weight: 900;
+    letter-spacing: 1.6px;
+}
+.flyers-deck{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    width: 100%;
+}
+/* .grid-item{
+   border: 1px solid black;
+} */
+.flyer-row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    width: 100%;
+}
+.flyer-img{
+    height: 800px;
+}
+.flyer-card{
+    width: 600px;
+    height: 40%;
+    /* border: 2px solid var(--pal1-a); */
+    background-color: var(--pal1-a);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+.flyer-card-title{
+    color: var(--pal1-d);
+    font-family: "font-montserrat";
+    font-size: 30px;
+    margin: 30px;
+}
+.flyer-card-desc {
+    color: var(--pal1-d);
+    font-family: "font-montserrat";
+    font-size: 15px;
+    margin: 30px;
+}
+.flyer-card-button {
+    color: var(--pal1-d);
+    font-family: "font-montserrat";
+    margin-inline: 30px;
+    margin-top: 50px;
+    align-self:end;
+    padding-inline: 20px;
+    padding-block: 14px;
+    background-color: var(--pal1-b);
+    border-radius: 2px;
+}
