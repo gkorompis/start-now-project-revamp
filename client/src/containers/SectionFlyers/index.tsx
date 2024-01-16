@@ -2,9 +2,18 @@ import { ImgFlyer1, ImgFlyer2, ImgFlyer3, ImgFlyer4 } from "../../assets/images"
 import "./index.css"
 
 const listFlyers = [
-    ImgFlyer1,
-    ImgFlyer2,
-    ImgFlyer3
+    {
+        image: ImgFlyer1, 
+        desc: ""
+    },
+    {
+        image: ImgFlyer2, 
+        desc: ""
+    },
+    {
+        image: ImgFlyer3, 
+        desc: ""
+    }
 ]
 
 const SectionFlyers = () =>{
@@ -15,20 +24,18 @@ const SectionFlyers = () =>{
                 <div className="flyers-deck">
                     {
                         listFlyers.map((x:any, item:any)=>{
+                            const {image, desc} = x;
                             return(
                                 <>
                                     <div className="grid-item">
-                                        <div className="flyer-row">
-                                            <div className="grid-item">
-                                                <img className="flyer-img" src={x}/>
-                                            </div>
-                                            <div className="grid-item">
-                                                <div className="flyer-card">
-                                                    <p className="flyer-card-title">live short course</p>
-                                                    <p className="flyer-card-desc">Register now for 2 hours courses about front-end development with react.</p>
-                                                    <span className="flyer-card-button">register</span>
-                                                </div>
-                                            </div>
+                                        <div className="flyer-card">
+                                          <img className="flyer-card-img" src={image}/>
+                                          <p className="flyer-card-desc">
+
+                                          </p>
+                                          <span className="flyer-card-span">
+                                            Register Now
+                                          </span>
                                         </div>
                                     </div>
                                 </>

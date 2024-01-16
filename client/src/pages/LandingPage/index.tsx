@@ -22,9 +22,10 @@ const LandingPage = () =>{
                 </div>
                 
                 <SectionServices/>
+                <SectionFlyers/>
                 <SectionIntensive/>
                 <SectionResources/>
-                <SectionFlyers/>
+                
                 
             </div>
         </>

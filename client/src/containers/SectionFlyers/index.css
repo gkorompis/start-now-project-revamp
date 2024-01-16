@@ -14,7 +14,7 @@
     margin-block: 39px;
 } */
 .section-flyers-title {
-    margin-block: 70px;
+    margin-top: 70px;
     font-size: 39px;
     color: var(--pal1-a);
     font-family: "font-montserrat";
@@ -23,51 +23,58 @@
 }
 .flyers-deck{
     display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(390px, 1fr));
+    grid-auto-rows: 690px;
+    row-gap: 0px;
     width: 100%;
+    /* background-color: blue; */
 }
+
 /* .grid-item{
-   border: 1px solid black;
+    background-color: aqua;
 } */
-.flyer-row{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    width: 100%;
-}
-.flyer-img{
-    height: 800px;
-}
 .flyer-card{
-    width: 600px;
-    height: 40%;
-    /* border: 2px solid var(--pal1-a); */
-    background-color: var(--pal1-a);
-    border-radius: 10px;
+    height: 80%;
+    width: 370px;
+    border-radius: 5px;
+    /* border: 1px solid black; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: var(--pal1-c); */
+}
 
+.flyer-card-img{
+    height: 80%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.524);;
 }
-.flyer-card-title{
-    color: var(--pal1-d);
-    font-family: "font-montserrat";
-    font-size: 30px;
-    margin: 30px;
-}
-.flyer-card-desc {
-    color: var(--pal1-d);
-    font-family: "font-montserrat";
-    font-size: 15px;
-    margin: 30px;
-}
-.flyer-card-button {
-    color: var(--pal1-d);
-    font-family: "font-montserrat";
-    margin-inline: 30px;
-    margin-top: 50px;
-    align-self:end;
-    padding-inline: 20px;
-    padding-block: 14px;
+.flyer-card-span{
+    height: 49px;
+    width: 200px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
     background-color: var(--pal1-b);
-    border-radius: 2px;
+    color: var(--pal1-d);
+    margin-top: 28px;
+
+    border-radius: 4px;
+    cursor: pointer;
+
+    font-family: "font-montserrat";
+    font-size: 20px;
+    font-weight: 600;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.291);
+}
+.flyer-card-span:hover{
+    background-color: #4593afdd;
+}
+.flyer-card-span:active{
+    background-color: #30667a;
 }
