@@ -11,7 +11,7 @@ const SectionServices = () =>{
                                 <img className="card-cap-img" src={ImgCourse2}/>
                             </div>
                             <div className="card-text">
-                                <p className="card-title">Register Live Courses</p>
+                                <p className="card-title">Register Course</p>
                                 <p className="card-info">Start now improving skills through 2 hours short courses or intensive class program</p>
                             </div>
                         </div>
@@ -22,7 +22,7 @@ const SectionServices = () =>{
                                  <img className="card-cap-img" src={ImgService}/>
                             </div>
                             <div className="card-text">
-                                <p className="card-title">Request custom website</p>
+                                <p className="card-title">Request Custom Website</p>
                                 <p className="card-info">Start now improving your project by creating a business website or simple web application</p>
                             </div>
                         </div>

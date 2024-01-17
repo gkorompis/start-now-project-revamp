@@ -1,10 +1,22 @@
 import { useEffect, useState } from "react";
 import "./index.css"
 import { useWindowSize } from "@uidotdev/usehooks";
+import { useNavigate } from "react-router-dom";
 
 const CustomNavbar = () =>{
     const size = useWindowSize();
     const [isBurger, setIsBurger] = useState(false);
+
+    const navigate = useNavigate();
+    const handleNavigate = (path?:string) =>{
+        try{
+            const pathName = path || "/";
+            navigate(pathName);
+        } catch (error:any) {
+            console.log({message: error})
+        }
+    }
+
     useEffect(()=>{
         const {height, width} = size as any;
         if(+width<740){
@@ -17,7 +29,7 @@ const CustomNavbar = () =>{
         <>
             <div className="custom-navbar">
                 <div className="navbar-div-logo navbar-div">
-                    <a className="navbar-anchors anchor-logo">start now</a>
+                    <a className="navbar-anchors anchor-logo" onClick={()=>handleNavigate()}>start now</a>
                 </div>
                 {
                     isBurger ?
@@ -33,8 +45,8 @@ const CustomNavbar = () =>{
                         </>
                      :  <>
                             <div className="navbar-div-links navbar-div">
-                                <a className="navbar-anchors anchor-link">intensive class</a>
-                                <a className="navbar-anchors anchor-link">live courses</a>
+                                <a className="navbar-anchors anchor-link" onClick={()=>handleNavigate("/courses")}>intensive class</a>
+                                <a className="navbar-anchors anchor-link" onClick={()=>handleNavigate("/live-courses")}>live courses</a>
                                 <a className="navbar-anchors anchor-link">custom website</a>
                             </div>
                             <div className="navbar-div-button navbar-div">

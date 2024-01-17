@@ -24,3 +24,6 @@ export { default as ImgFlyer1 } from './lsc_feb_1.png'
 export { default as ImgFlyer2 } from './lsc_mar_1.png'
 export { default as ImgFlyer3 } from './se-1-jan.png'
 export { default as ImgFlyer4 } from './se-2-jan.png'
+
+export { default as BannerEnrichment } from './coding-enrichment.png'
+export { default as BannerSkillset } from './skill-set.png'
