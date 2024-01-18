@@ -47,7 +47,7 @@ const CustomNavbar = () =>{
                             <div className="navbar-div-links navbar-div">
                                 <a className="navbar-anchors anchor-link" onClick={()=>handleNavigate("/courses")}>intensive class</a>
                                 <a className="navbar-anchors anchor-link" onClick={()=>handleNavigate("/live-courses")}>live courses</a>
-                                <a className="navbar-anchors anchor-link">custom website</a>
+                                <a className="navbar-anchors anchor-link" onClick={()=>handleNavigate("/custom-web")}>custom website</a>
                             </div>
                             <div className="navbar-div-button navbar-div">
                                 <a className="navbar-anchors anchor-button">start now</a>

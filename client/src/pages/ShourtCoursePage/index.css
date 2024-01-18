@@ -1,6 +1,6 @@
 .start-course-page{
     width: 98.5vw;
-    height: 100vh;
+    /* height: 100vh; */
     /* background-color: var(--pal1-b); */
     display: flex;
     flex-direction: column;
