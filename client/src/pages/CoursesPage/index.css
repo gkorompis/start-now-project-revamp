@@ -23,7 +23,7 @@
     left: 0; */
     width: 79%;
     /* height: 100vh; */
-    margin-top: 100px;
+    margin-top: 30px;
     background-color:var(--pal1-d);
     color: var(--pal1-a);
     display: flex;
@@ -166,4 +166,27 @@
             margin-left: 50px;
         }
     
+}
+
+.registration-guide{
+    /* border: 1px solid black; */
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+.registration-text{
+    margin-bottom: 20px;
+    font-family: 'font-montserrat';
+    font-weight: 600;
+    font-size: 16.9px;
+}
+.registration-guide-wrap{
+    margin-left: 30px;
+    margin-top: 40px;
+    /* margin-bottom: 40px; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.325);
+}
+.registration-guide-img{
+    height: 370px;
+    /* width: 290px; */
+    border-radius: 6px;
 }

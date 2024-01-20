@@ -7,3 +7,35 @@
     /* align-items: start; */
     /* border-top-right-radius: 59%; */
 }
+
+.registration-course-guide {
+    /* border: 1px solid black; */
+    margin-top: 60px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    background-color: var(--pal1-b);
+    padding: 20px;
+    width: 400px;
+    border-radius: 5px;
+}
+
+.registration-course-text {
+    margin-block: 20px;
+    margin-left: 10px;
+    font-family: 'font-montserrat';
+    /* font-weight: 100; */
+    font-size: 16.9px;
+    color: var(--pal1-d);
+}
+.registration-course-guide-wrap {
+    margin-left: 30px;
+    margin-top: 40px;
+    
+}
+
+.registration-course-guide-img {
+    height: 370px;
+    /* width: 290px; */
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.325);
+}

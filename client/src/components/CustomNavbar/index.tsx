@@ -2,8 +2,14 @@ import { useEffect, useState } from "react";
 import "./index.css"
 import { useWindowSize } from "@uidotdev/usehooks";
 import { useNavigate } from "react-router-dom";
+import { ModalStartNow } from "../../containers";
 
-const CustomNavbar = () =>{
+interface CustomNavbarProps {
+    handlers?: any
+}
+
+const CustomNavbar = ({handlers}:CustomNavbarProps) =>{
+    const [isModalStartNow, setIsModalStartNow] = useState(false);
     const size = useWindowSize();
     const [isBurger, setIsBurger] = useState(false);
 
@@ -50,13 +56,16 @@ const CustomNavbar = () =>{
                                 <a className="navbar-anchors anchor-link" onClick={()=>handleNavigate("/custom-web")}>custom website</a>
                             </div>
                             <div className="navbar-div-button navbar-div">
-                                <a className="navbar-anchors anchor-button">start now</a>
+                                <a className="navbar-anchors anchor-button" onClick={()=>setIsModalStartNow(true)}>start now</a>
                             </div> 
                         </> 
                     
                 }
                   
             </div>
+            {
+                isModalStartNow ? <ModalStartNow handlers={{setIsModalStartNow}}/> : null
+            }
         </>
     )
 }

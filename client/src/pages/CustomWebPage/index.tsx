@@ -1,4 +1,5 @@
 import { CustomNavbar } from "../../components";
+import { SectionPreviews } from "../../containers";
 import "./index.css";
 
 const CustomWebPage = () =>{
@@ -6,7 +7,8 @@ const CustomWebPage = () =>{
         <>
             <div className="custom-web-page">
                 <CustomNavbar/>
-                <p className="custom-web-title">custom web</p>
+                <SectionPreviews/>
+                {/* <p className="custom-web-title">custom web</p> */}
             </div>
         </>
     )

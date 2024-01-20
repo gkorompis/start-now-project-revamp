@@ -13,10 +13,14 @@ const listCalendar = [
 ]
 
 const SectionCalendar = () =>{
+    const openLinkHandler = (link:any) =>{
+        console.log("link", link)
+        window.open(link, '_blank');
+    }
     return(
         <>
             <div className="section-calendar">
-                <p className="section-calendar-title">UPCOMING COURSES</p>
+                <p className="section-calendar-title">UPCOMING LIVE SHORT COURSES</p>
                 <div className="calendar-deck">
                     {
                         listCalendar.map((x:any, item:any)=>{
@@ -29,7 +33,7 @@ const SectionCalendar = () =>{
                                           <p className="calendar-card-desc">
 
                                           </p>
-                                          <span className="calendar-card-span">
+                                          <span className="calendar-card-span" onClick={()=> openLinkHandler("https://startnow-short-course.paperform.co")}>
                                             Register Now
                                           </span>
                                         </div>
