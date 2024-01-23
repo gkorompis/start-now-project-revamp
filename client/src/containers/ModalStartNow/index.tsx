@@ -7,9 +7,9 @@ interface ModalStartNowProps {
 }
 
 const openLinkHandler = (link:any) =>{
-        console.log("link", link)
-        window.open(link, '_blank');
-    }
+    // console.log("link", link)
+    window.open(link, '_blank');
+}
 
 const ModalStartNow = ({handlers}:ModalStartNowProps) =>{
 
@@ -31,6 +31,28 @@ const ModalStartNow = ({handlers}:ModalStartNowProps) =>{
         setIsTooltipCoding(false);
         setIsModalStartNow(false);
     }
+
+    const handleOptionCourseConsultWa= ()=>{
+        openLinkHandler(`https://wa.me/6287715376976?text=Hi,%20I'd%20like%20to%20know%20more%20about%20the%20coding%20program.%20Can%20you%20help%20me%20with%20more%20information.%20Thank%20you.%20`);
+        setIsTooltipCoding(false);
+        setIsModalStartNow(false);
+    }
+
+    const handleOptionCustomWeb= ()=>{
+        openLinkHandler('https://custom-web-start-now.paperform.co/');
+        setIsTooltipCoding(false);
+        setIsModalStartNow(false);
+    }
+     const handleOptionCustomWebConsultWa= ()=>{
+        openLinkHandler(`https://wa.me/6287715376976?text=Hi,%20I'd%20like%20to%20schedule%20an%20online%20meeting%20to%20discuss%20my%20project.%20Thank%20you.%20`);
+        setIsTooltipCoding(false);
+        setIsModalStartNow(false);
+    }
+
+    
+
+    
+    
      
     return(
         <>
@@ -65,6 +87,7 @@ const ModalStartNow = ({handlers}:ModalStartNowProps) =>{
                                                 <p className="modal-tooltip-option" onClick={handleOptionCodingClass}>Coding Enrichment</p>
                                                 <p className="modal-tooltip-option" onClick={handleOptionCodingClass}>Specialised Skill Programming</p>
                                                 <p className="modal-tooltip-option" onClick={handleOptionShortCourse}>Live Short Courses</p>
+                                                <p className="modal-tooltip-option" onClick={handleOptionCourseConsultWa}>Consult by whatsapp</p>
                                             </div>
                                         </div> : null
                                     }
@@ -87,8 +110,8 @@ const ModalStartNow = ({handlers}:ModalStartNowProps) =>{
                                         <div className="modal-tooltip-wrap">
                                             <div className="modal-tooltip-slide">
                                                 <img className="modal-close-tooltip" src={ImgModalClose} onClick={()=>setIsTooltipWebsite(false)}/>
-                                                <p className="modal-tooltip-option" onClick={handleOptionCodingClass}>Consult by whatsapp</p>
-                                                <p className="modal-tooltip-option" onClick={handleOptionCodingClass}>Request for quote</p>
+                                                <p className="modal-tooltip-option" onClick={handleOptionCustomWeb}>Request for quote</p>
+                                                <p className="modal-tooltip-option" onClick={handleOptionCustomWebConsultWa}>Consult by whatsapp</p>
                                             </div>
                                         </div> : null
                                     }

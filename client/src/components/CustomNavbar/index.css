@@ -7,10 +7,11 @@
     display: grid;
     grid-template-columns: 15% 75% 10%;
     z-index: 10;
+    padding-top: 8px;
 }
 @media screen and (max-width:1200px) {
     .custom-navbar{
-        grid-template-columns: 25% 65% 10%;
+        grid-template-columns: 20% 70% 10%;
         /* background-color: antiquewhite; */
     }
 }
@@ -102,6 +103,7 @@
 @media screen and (max-width:850px) {
     .custom-navbar {
         grid-template-columns: 25% 62% 13%;
+
     }
     .anchor-button{
         padding-inline: 10px;
@@ -143,7 +145,7 @@
     }
     .burger{
         margin-right: 0px;
-        justify-content: end;
+        justify-content: center;
         /* background-color: aliceblue ; */
     }
 }
@@ -151,9 +153,22 @@
 @media screen and (max-width:610px) {
     
     .custom-navbar {
-            grid-template-columns: 29% 57% 13%;
+            grid-template-columns: 29% 54% 15%;
             width: 100vw;
             /* background-color: bisque; */
     }
+    .anchor-logo {
+        font-family: "font-palo-alto";
+        font-family: "font-birney";
+        font-size: 16px;
+    }
 
+}
+
+@media screen and (max-width:300px) {
+    .anchor-logo {
+        font-family: "font-palo-alto";
+        font-family: "font-birney";
+        font-size: 13px;
+    }
 }

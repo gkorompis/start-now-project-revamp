@@ -51,7 +51,7 @@ const CustomNavbar = ({handlers}:CustomNavbarProps) =>{
                         </>
                      :  <>
                             <div className="navbar-div-links navbar-div">
-                                <a className="navbar-anchors anchor-link" onClick={()=>handleNavigate("/courses")}>intensive class</a>
+                                <a className="navbar-anchors anchor-link" onClick={()=>handleNavigate("/courses")}>coding program</a>
                                 <a className="navbar-anchors anchor-link" onClick={()=>handleNavigate("/live-courses")}>live courses</a>
                                 <a className="navbar-anchors anchor-link" onClick={()=>handleNavigate("/custom-web")}>custom website</a>
                             </div>

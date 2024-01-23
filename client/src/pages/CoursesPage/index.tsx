@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { CustomNavbar } from "../../components";
 import "./index.css"
 import { BannerEnrichment, BannerSkillset, RegistrationSteps } from "../../assets/images";
+import { SectionRegSteps } from "../../containers";
 
 const CoursesPage = () =>{
     const [isPageSlide, setIsPageSlide] = useState(false);
@@ -18,9 +19,10 @@ const CoursesPage = () =>{
         <>
             <div className="courses-page">
                 <CustomNavbar/>
-                 <div className="registration-guide-wrap">
+                 {/* <div className="registration-guide-wrap">
                         <img className="registration-guide-img" src={RegistrationSteps}/>
-                    </div>
+                </div> */}
+                <SectionRegSteps/>
                 <div className={`stand-by  ${isPageSlide ? "page-slide" : ""}` }>
                     
                     {/* <div className="registration-guide">
@@ -29,7 +31,7 @@ const CoursesPage = () =>{
                         <p className="registration-text">3. Wait for 1-on-1 follow up from Start Now team</p>
                     </div> */}
                    
-                    <p className="courses-page-title">INTENSIVE CLASS</p>
+                    <p className="courses-page-title">CODING PROGRAM</p>
                     <div className="class-course-deck">
                         <div className="grid-item">
                             <div className="class-course-card course-card-enrichment-class">

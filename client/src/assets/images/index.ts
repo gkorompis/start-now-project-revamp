@@ -44,3 +44,7 @@ export { default as Preview12 } from './preview-12.png'
 
 export { default as ImgWebDesign } from './web-design.png'
 export { default as ImgModalClose} from './modal-close.png'
+
+export { default as ImgDemo1a } from './demo1-a.png'
+export { default as ImgDemo1b } from './demo1-b.png'
+export { default as PreviewDemo1 } from './preview-demo1.png'
