@@ -1,0 +1,198 @@
+.demo-ecom{
+    width: 100%;
+    height: 100%;
+    background-color: #ebebeb;
+    overflow-y: auto;
+    padding-bottom:15px;
+
+    /* background-image: url('../../assets/images/demo1-b.png'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.login-banner-wrap-d2 {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.login-banner-d2 {
+    height: 20vh;
+    border-radius: 6px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.login-logo-d2{
+    height: auto;
+    width: auto;
+    max-width: 100px;
+    max-height: 100px;
+    margin-bottom: 20px;
+
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+}
+.login-title-d2 {
+    font-family: "font-montserrat";
+    color: var(--pal1-a);
+    font-size: 3.5vw;
+    font-weight: 900;
+    margin-bottom: 14px;
+}
+
+
+
+.login-form-wrap-d2{
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 70vw;
+    box-sizing: border-box;
+    text-align: center;
+}
+.login-form-d2{
+    display: flex;
+    flex-direction: column;
+}
+.login-form-label-d2 {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    align-self: start;
+}
+.login-form-label-d2 {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    align-self: start;
+}
+input {
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.login-button-d2 {
+    padding-inline: 21px;
+    padding-block: 9px;
+    background-color: rgba(16, 51, 51, 0.924) ;
+    color: var(--pal1-c);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(28, 35, 35, 0.247);
+    cursor: pointer;
+}
+
+
+
+/* navbar post-login */
+.demo2-anchor-logo {
+    height: 100%;
+    font-size: 17px;
+    letter-spacing: 1px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    cursor: pointer;
+}
+.login-logo-navbar-d2 {
+    height: auto;
+    width: auto;
+    max-width: 40px;
+    max-height: 40px;
+
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.191);
+    border-radius: 50%;
+}
+.demo2-navbar {
+    height: 10vh;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background-color: #0c0c0cde;
+    box-sizing: border-box;
+    padding-inline: 50px;
+    transition: 0.4s;
+}
+
+/* demo2-content */
+.demo2-tagline-banner {
+    width: 60vw;
+    background-color: #11341bb2;
+    padding: 20px;
+    margin-top: 5vh;
+    box-sizing: border-box;
+    /* padding: 1vh; */
+}
+.demo2-content-tagline {
+    font-size: 5vw;
+    color: var(--pal1-c);
+    font-weight: bold;
+}
+.demo2-content-tagline-alt {
+    font-size: 3vw;
+    color: var(--pal1-d);
+    font-weight: bold;
+}
+
+/* conveyor */
+
+.demo2-products-conveyor {
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    /* margin-top: 50px; */
+    padding-inline:10px;
+    box-sizing: border-box;
+}
+.demo2-conveyor-title{
+    font-size: 20px;
+    margin-top:30px;
+    margin-bottom:10px;
+    padding-left: 10px;
+}
+.demo2-conveyor-grid-item {
+    display: flex;
+    flex-direction: column;
+}
+.demo2-products-conveyor>* {
+    /* flex: 0 0 auto; */
+    /* Ensure that items won't shrink or grow */
+    min-width: auto;
+    margin-inline: 17px;
+}
+.demo2-preview-card-img {
+    /* width: auto;
+    height: auto; */
+    width: 120px;
+    height: 120px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.139);
+
+    cursor: pointer;
+}
+
+.demo2-preview-card-info {
+    color: var(--pal1-a);
+    margin-block: 19px;
+}
+
+@media screen and (max-width: 780px) {
+    .demo2-navbar {
+        padding-inline: 5vw;
+    }
+
+    .login-title-d2 {
+        font-size: 6vw;
+    }
+}

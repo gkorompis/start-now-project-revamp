@@ -34,6 +34,8 @@
     max-height: 230px;
     border-radius: 6px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.139);
+
+    cursor: pointer;
 }
 .demo-preview-card-info {
     color: var(--pal1-d);
