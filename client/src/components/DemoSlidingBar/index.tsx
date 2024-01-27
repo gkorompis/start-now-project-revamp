@@ -42,7 +42,7 @@ const DemoSlidingBar = ({handlers}:DemoProps) =>{
                             <div className="demo1-anchor-groups">
                                 <a className="anchor-text demo1-anchor-item">home</a>
                                 <a className="anchor-text demo1-anchor-item">about us</a>
-                                <a className="anchor-text demo1-anchor-item">book session</a>
+                                <a className="anchor-text demo1-anchor-item">logout</a>
                             </div>
 
                         }

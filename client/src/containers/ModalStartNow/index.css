@@ -15,7 +15,7 @@
 .modal-start-now-wrap {
     background-color: rgba(255, 255, 255, 0.133);
     padding: 50px;
-    height: 80vh;
+    /* height: 80vh; */
     width: 90vw;
     overflow: auto;
     box-sizing: border-box;
@@ -23,7 +23,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-        /* justify-content: center; */
+    justify-content: center;
 }
 .modal-start-now-wrap-header{
     display: grid;
@@ -32,17 +32,18 @@
     width: 100%;
 }
 
+
 .modal-start-now-title{
     font-family: "font-montserrat";
-    font-size: 35px;
+    font-size: 30px;
     color: var(--pal1-d);
     text-align: center;
 }
 
 .modal-start-now-deck{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    grid-auto-rows: 300px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 200px;
     width: 87%;
     /* background-color: blue; */
     margin-top: 40px;
@@ -64,7 +65,7 @@
     position: relative;
 }
 .modal-service-card-img{
-    height: 130px;
+    height: 100px;
     filter: invert(80%);
     transition: 0.1s;
     cursor: pointer;
@@ -72,7 +73,7 @@
 
 .modal-service-card-text{
     font-family: "font-montserrat";
-    font-size: 30px;
+    font-size: 25px;
     color: var(--pal1-d);
     margin-top: 17px;
     transition: 0.1s;
@@ -92,12 +93,35 @@
         font-size: 20px;
     }
 }
+@media screen and (max-width: 590px) {
+
+    .modal-start-now-wrap-header {
+        display: grid;
+        grid-template-columns: 10% 80% 10%;
+        /* background-color: aliceblue; */
+        width: 100%;
+    }
+    .modal-start-now-title {
+        font-family: "font-montserrat";
+        font-size: 23px;
+        color: var(--pal1-d);
+        text-align: center;
+    }
+    .modal-service-card-img {
+        height: 80px;
+        filter: invert(80%);
+        transition: 0.1s;
+        cursor: pointer;
+    }
+    .modal-service-card-text{
+        font-size: 15px;
+    }
+}
 .modal-close-img{
     height: 20px;
     filter: invert(90%);
     cursor: pointer;
 }
-
 .modal-tooltip {
     position: absolute;
     background-color: #333;

@@ -1,7 +1,8 @@
 /* section intensive class */
 .section-intensive-class {
-    width: 98.93vw;
-    height: vh;
+    width: 100vw;
+    height: auto;
+    padding-block: 44px;
     /* border-top-right-radius: 5%; */
     /* border-top-left-radius: 5%; */
 
@@ -14,40 +15,58 @@
 
 }
 .section-title{
-    margin-block: 70px;
+    margin-block: 29px;
+    /* margin-left: 20px; */
+    /* box-sizing: border-box; */
     font-size: 39px;
     color: var(--pal1-a);
     font-family: "font-montserrat";
     font-weight: 900;
     letter-spacing: 1.6px;
+    /* background-color: aqua; */
+    text-align: center;
+}
+@media screen and (max-width: 580px){
+    .section-title{
+        font-size: 29px;
+    }
 }
 .class-card-deck{
-    width: 90%;
+    width: 95%;
+    /* height: 100% !important; */
     display: grid;
     row-gap: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    /* background-color: var(--pal1-a); */
+    column-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    background-color: var(--pal1-d);
+    /* margin-block: 20px; */
+    overflow-x: auto !important;
 }
+/* .grid-item{
+    background-color: blueviolet;
+} */
 .class-card{
     /* background-color: var(--pal1-a); */
     border: 2px solid var(--pal1-a);
-    height: 60vh;
-    width: 600px;
+    height: 100%;
+    width: 100%;
     border-radius: 10px;
+    box-sizing: border-box;
+}
+@media screen and (max-width: 580px) {
+    .class-card {
+        width: 90%;
+    }
 }
 
-@media screen and (max-width: 1370px){
-    /* .section-intensive-class{
-        height: 150vh;
-    } */
+/* @media screen and (max-width: 1370px){
+
     .class-card{
         width: 500px;
     }
 }
 @media screen and (max-width: 1200px) {
-    /* .section-intensive-class {
-        height: 150vh;
-    } */
+
 
     .class-card {
         width: 400px;
@@ -58,7 +77,7 @@
     .section-intensive-class {
         height: 150vh;
     }
-}
+} */
 
 .module-summary{
     display: flex;
@@ -69,7 +88,16 @@
     font-family: "font-montserrat";
     margin: 30px;
 }
+@media screen and (max-width: 580px) {
+    .class-card-title {
+        font-size: 24px;
+    }
+}
 
+.class-card-infos{
+    box-sizing: border-box;
+    padding-block: 20px;
+}
 .class-card-info-item{
     display: flex;
     justify-content: start;
@@ -81,4 +109,15 @@
     height: 30px;
     width: 30px;
     margin-right: 16px;
+}
+
+@media screen and (max-width: 580px) {
+    .class-card-info-item-text {
+        font-size: 14px;
+    }
+    .class-card-info-item-img {
+        height: 20px;
+        width: 20px;
+        margin-right: 16px;
+    }
 }

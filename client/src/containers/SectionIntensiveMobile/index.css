@@ -1,0 +1,60 @@
+/* section intensive class */
+.section-intensive-class-mobile {
+    width: 98.93vw;
+    height: vh;
+    /* border-top-right-radius: 5%; */
+    /* border-top-left-radius: 5%; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--pal1-d);
+
+}
+.section-title-mobile{
+    margin-block: 70px;
+    font-size: 39px;
+    color: var(--pal1-a);
+    font-family: "font-montserrat";
+    font-weight: 900;
+    letter-spacing: 1.6px;
+}
+.class-card-deck-mobile{
+    width: 90%;
+    display: grid;
+    row-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    /* background-color: var(--pal1-a); */
+}
+.class-card-mobile{
+    /* background-color: var(--pal1-a); */
+    border: 2px solid var(--pal1-a);
+    height: 60vh;
+    width: 600px;
+    border-radius: 10px;
+}
+
+.module-summary-mobile{
+    display: flex;
+    flex-direction: column;
+}
+.class-card-title-mobile{
+    font-size: 32px;
+    font-family: "font-montserrat";
+    margin: 30px;
+}
+
+.class-card-info-item-mobile{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-inline: 30px;
+    margin-block: 10px;
+}
+.class-card-info-item-img-mobile{
+    height: 30px;
+    width: 30px;
+    margin-right: 16px;
+}

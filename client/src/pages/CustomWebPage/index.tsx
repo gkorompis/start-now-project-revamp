@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { CustomNavbar } from "../../components";
+import { CustomNavbar, CustomWebBanner } from "../../components";
 import { InteractiveDemos, SectionPreviews } from "../../containers";
 import "./index.css";
 
@@ -12,10 +12,12 @@ const CustomWebPage = () =>{
     return(
         <>
             <div className="custom-web-page">
-                <CustomNavbar/>
                 
-                <SectionPreviews/>
+                <CustomNavbar/>
+                <CustomWebBanner/>
                 <InteractiveDemos/>
+                <SectionPreviews/>
+                
             </div>
 
             

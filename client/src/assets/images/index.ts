@@ -48,6 +48,7 @@ export { default as ImgModalClose} from './modal-close.png'
 export { default as ImgDemo1a } from './demo1-a.png'
 export { default as ImgDemo1b } from './demo1-b.png'
 export { default as PreviewDemo1 } from './preview-demo1.png'
+export { default as PreviewDemo2 } from './preview-demo2.png'
 
 export { default as ImgDemo2Logo1 } from './demo2-logo1.png'
 export { default as ImgDemo2Logo2 } from './demo2-logo2.png'
@@ -62,3 +63,7 @@ export { default as ImgDemo2Product5 } from './demo2product5.jpeg'
 export { default as ImgDemo2Product6 } from './demo2product6.jpeg'
 export { default as ImgDemo2Product7 } from './demo2product7.png'
 export { default as ImgDemo2Product8 } from './demo2product8.jpeg'
+
+export { default as ImgDemo2Bg1 } from './demo2bg1.jpg';
+export { default as ImgDemo2Bg2 } from './demo2bg2.jpg';
+export { default as ImgDemo2Bg3 } from './demo2bg3.jpg';
