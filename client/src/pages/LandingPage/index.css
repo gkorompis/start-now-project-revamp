@@ -26,10 +26,19 @@
 
     /* background-color: aliceblue; */
 }
+/* .landing-page-banner-img{
+    background-color: aqua;
+} */
 .img-landing-page-banner{
     height: 200px;
     margin-right: 32px;
     filter: invert(50%); 
+    /* background-color: aqua; */
+}
+@media screen and (max-width: 550px) {
+    .img-landing-page-banner {
+        margin-right: 0px;
+    }
 }
 .landing-page-banner-tagline{
     width: 60vw;

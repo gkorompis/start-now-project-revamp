@@ -3,6 +3,7 @@ import "./index.css"
 import { useWindowSize } from "@uidotdev/usehooks";
 import { useNavigate } from "react-router-dom";
 import { ModalStartNow } from "../../containers";
+import { ImgModalClose } from "../../assets/images";
 
 interface CustomNavbarProps {
     handlers?: any
@@ -12,6 +13,7 @@ const CustomNavbar = ({handlers}:CustomNavbarProps) =>{
     const [isModalStartNow, setIsModalStartNow] = useState(false);
     const size = useWindowSize();
     const [isBurger, setIsBurger] = useState(false);
+    const [isBurgerOpen, setIsBurgenOpen] = useState(false);
 
     const navigate = useNavigate();
     const handleNavigate = (path?:string) =>{
@@ -42,10 +44,23 @@ const CustomNavbar = ({handlers}:CustomNavbarProps) =>{
                         <>
                             <div></div>
                             <div className="burger">
-                                <div className="layers">
+                                <div className="layers" onClick={()=>setIsBurgenOpen(true)}>
                                     <span className="burger-span layer-a"></span>
                                     <span className="burger-span layer-b"></span>
                                     <span className="burger-span layer-c"></span>
+                                </div>
+                                
+                            </div>
+                            <div className={`burger-bar-slider ${isBurgerOpen ? "slider-show" : ""} flex-center-col-x`}>
+
+                                <img className="slider-close-img" src={ImgModalClose} onClick={()=>setIsBurgenOpen(false)}/>
+                                <div className="bar-slider-menu flex-center-col-y">
+                                    <a className="navbar-anchors anchor-link-slider" onClick={()=>handleNavigate("/courses")}>coding program</a>
+                                    <a className="navbar-anchors anchor-link-slider" onClick={()=>handleNavigate("/live-courses")}>live courses</a>
+                                    <a className="navbar-anchors anchor-link-slider" onClick={()=>handleNavigate("/custom-web")}>custom website</a>
+                                    {/* <div className="navbar-div-button navbar-div"> */}
+                                    <a className="anchor-button-slider" onClick={()=>setIsModalStartNow(true)}>start now</a>
+                                    {/* </div>  */}
                                 </div>
                             </div>
                         </>

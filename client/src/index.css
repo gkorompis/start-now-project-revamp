@@ -62,6 +62,16 @@ p, h1, h2, h3 {
   align-items: center;
   justify-content: center;
 }
+.flex-center-col-x {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flex-center-col-y {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .flex-center-row {
   display: flex;
   flex-direction: row;
