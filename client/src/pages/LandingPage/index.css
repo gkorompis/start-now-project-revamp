@@ -48,7 +48,6 @@
 .tagline-landing-page-banner{
     color: var(--pal1-d);
     font-size: 65px;
-    /* font-family: "font-quicksand"; */
     font-family: "font-montserrat";
     letter-spacing: 1.6px;
     font-weight: 600;
@@ -59,8 +58,6 @@
 .tagline-span{
     color: var(--pal1-c);
     font-size: 70px;
-    font-family: "font-quicksand";
-    font-family: "font-birney";
     font-family: "font-montserrat";
     letter-spacing: 1.6px;
     /* font-family: "font-palo-alto"; */
