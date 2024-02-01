@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { CustomNavbar } from "../../components";
+import { CanvaEmbed, CustomNavbar } from "../../components";
 import "./index.css"
 import { BannerEnrichment, BannerSkillset, RegistrationSteps } from "../../assets/images";
 import { SectionRegSteps } from "../../containers";
@@ -30,7 +30,6 @@ const CoursesPage = () =>{
                         <p className="registration-text">2. Fill in registration form</p>
                         <p className="registration-text">3. Wait for 1-on-1 follow up from Start Now team</p>
                     </div> */}
-                   
                     <p className="courses-page-title">CODING PROGRAM</p>
                     <div className="class-course-deck">
                         <div className="grid-item">
